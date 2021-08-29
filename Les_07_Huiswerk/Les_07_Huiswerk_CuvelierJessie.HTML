@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Tandartsafspraak </title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <h1> Tandartsafspraak </h1>
+      <!-- 1e paragraaf -->
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+        Curabitur at velit quis felis consectetur mollis. Integer diam ex, luctus eu sollicitudin et, dapibus et sapien. Integer tincidunt, tortor dapibus placerat imperdiet, orci felis semper eros, eget cursus tortor est sed justo. <br>
+        Mauris tempor tincidunt lorem a interdum. Cras eu mi sollicitudin, efficitur nunc sed, ultricies lectus. Curabitur fringilla dui ac nisl tincidunt pulvinar. Donec vel iaculis orci. <br>
+        Vestibulum accumsan ex purus, interdum euismod purus scelerisque vitae. Vestibulum pretium finibus accumsan. Integer elementum et ante at convallis. Aenean tempor malesuada odio, at efficitur urna finibus id. Quisque eleifend pretium aliquam. <br>
+        Ut vitae tristique eros. Donec ultricies aliquam dolor. Nullam rhoncus, mi sed luctus lobortis, leo ligula scelerisque nunc, sed mattis dui lectus non tellus.
+      </p>
+
+      <!-- Afbeeldingen -->
+      <figure>
+        <img src="buitenzijde-pijl.jpg" alt="Buitengevel" title="Tandartspraktijk" width="300">
+        <img src="wachtkamer.jpg" alt="Wachtkamer" title="Tandartspraktijk" width="300">
+        <img src="slide1-1.jpg" alt="Praktijkzaal" title="Tandartspraktijk" width="300">
+      </figure>
+
+      <!-- Formulier -->
+      <form id="Tandartsafspraak" action="https://formspree.io/f/mbjqznoy" method="post">
+        <!-- Persoonlijke gegevens -->
+        <fieldset>
+        <legend> <b> Persoonlijke gegevens </b> </legend>
+          <!-- Naam -->
+          <label for="Name"> <i> Naam: </i> </label>
+          <input id="Name" type="text" name="Naam" placeholder="Naam">
+          <input type="text" name="Voornaam" placeholder="Voornaam">
+          <br>
+          <!-- Geslacht -->
+          <label for="Gender"> <i> Geslacht: </i> </label>
+          <input id="Gender" type="radio" name="Geslacht" value="Man"> Man
+          <input type="radio" name="Geslacht" value="Vrouw"> Vrouw
+          <input type="radio" name="Geslacht" value="Non-binair"> Non-binair
+          <br>
+          <!-- Leeftijd -->
+          <label for="Age"> <i> Leeftijd: </i> </label>
+          <input id="Age" type="number" name="Leeftijd" min="1" max="110">
+          <br>
+          <!-- Email -->
+          <label for="Email"> <i> E-mailadres: </i> </label>
+          <input id="Email" type="email" name="Emailadres" placeholder="E-mailadres">
+          <br>
+          <!-- Telefoon -->
+          <label for="Tel"> <i> Telefoon -of GSM-nummer: </i> </label>
+          <input id="Tel" type="tel" name="Telefoon -of GSM-nummer" placeholder="Telefoon of GSM">
+          <br>
+        </fieldset>
+
+        <!-- Beschrijving klachten -->
+        <fieldset>
+        <legend> <b> Beschrijving van uw klachten </b> </legend>
+          <!-- Symptomen -->
+          <label for="Symptoms"> <i> Vink alle symptomen aan die u heeft: </i> </label> <br>
+          <input id="Symptoms" type="checkbox" name="Symptomen" value="Gevoelig bij koud voedsel"> Gevoelig bij koud voedsel <br>
+          <input type="checkbox" name="Symptomen" value="Pijn bij eten van zoetigheid"> Pijn bij eten van zoetigheid <br>
+          <input type="checkbox" name="Symptomen" value="Bloed bij het poetsen van de tanden"> Bloed bij het poetsen van de tanden <br>
+          <input type="checkbox" name="Symptomen" value="Slechte smaak en/of adem"> Slechte smaak en/of adem <br>
+          <br>
+          <!-- Foto -->
+          <label for="Pic"> <i> Upload hier (eventueel) een foto: </i> </label>
+          <input id="Pic" type="file" name="Foto" accept="image/x-png, image/jpeg">
+        </fieldset>
+
+        <!-- Toelichting klachten -->
+        <fieldset>
+        <legend> <b> Toelichting van uw klachten </b> </legend>
+          <!-- Tekstveld -->
+          <label for="Text"> <i> Geef een bondige omschrijving van uw klachten: (max. 1500 tekens) </i> </label> <br>
+          <textarea id="Text" name="Omschrijving van klachten" maxlength="1500"> </textarea>
+          <br>
+          <!-- Datumkiezer -->
+          <label for="Date"> <i> Kies een datum: </i> </label>
+          <input id="Date" type="date" name="Datum">
+        </fieldset>
+
+        <!-- Verzendknop -->
+        <button type="submit" name="Verzenden"> <b> Verzenden </b> </button>
+      </form>
+  </body>
+</html>
